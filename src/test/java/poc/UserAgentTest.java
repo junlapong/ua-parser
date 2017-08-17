@@ -18,7 +18,7 @@ public class UserAgentTest {
 
 
 	@Test
-	//@Ignore
+	@Ignore
 	public void testUaDetector() throws Exception {
 
 		uaDetector(UA_STRING);
