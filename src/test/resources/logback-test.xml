@@ -2,7 +2,7 @@
 <configuration debug="false">
 
     <property name="log-path" value="logs" />
-    <property name="log-name" value="${log-path}/test-batch" />
+    <property name="log-name" value="${log-path}/application" />
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
@@ -31,9 +31,8 @@
     <logger name="org" level="WARN" />
 
     <root level="TRACE">
-        <!-- CONSOLE, DAILYLOG, ASYNC -->
-        <appender-ref ref="CONSOLE" />
-        <!-- <appender-ref ref="DAILYLOG" /> -->
+        <!-- CONSOLE, ASYNC, DAILYLOG -->
+        <appender-ref ref="ASYNC" />
     </root>
 
 </configuration>
